@@ -1,13 +1,83 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  background: #f1f5f8;
+  color: #222;
+}
+.booklist {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 5rem auto;
+  display: grid;
+  gap: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .booklist {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.book {
+  background: blueviolet;
+  color: #222;
+  border-radius: 1rem;
+  text-align: center;
+  padding: 2rem;
+}
+.book img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.book h2 {
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+h2 {
+  color: red;
+  background-color: lightblue;
+  font-family: Ariel;
+  padding: 10px;
+}
+h1 {
+  color: black;
+  background-color: yellow;
+  border: 2px solid blue;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+h4 {
+  margin-top: 2rem;
+  font-size: 3rem;
+  color: white;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+}
+.book img {
+  width: 100%;
+  object-fit: cover;
+}
+article p {
+  color: white;
+  text-transform: capitalize;
+  max-width: 15rem;
+  text-align: center;
+}
+article button {
+  background-color: yellow;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: larger;
+  margin-top: 1rem;
+  color: #222;
+  padding: 1rem;
+  font-size: medium;
+  font-weight: 900;
+  text-transform: uppercase;
 }
